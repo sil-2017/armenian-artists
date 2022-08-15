@@ -1,0 +1,96 @@
+@import './global_styles';
+
+.menu-toggle {
+  width:65px;
+  height: auto;
+  float: left;
+  margin-left:30px;
+  margin-top: 10px;
+  overflow: hidden;
+  padding: 4px;
+}
+
+.txtMyu {
+  font-size:22px;
+  color: #FFFFFF;
+  margin-left: 120px;
+  overflow: hidden;
+  margin-top: 10px;
+  font-family: 'Marck Script', cursive;
+  text-shadow: 0px 0px 0 rgb(-70,-71,0),
+  0px 1px  0 rgb(-309,-310,0),
+  0px 2px 1px rgba(0,0,0,0.01),
+  0px 2px 2px rgba(0,0,0,0.5),
+  0px 0px 2px rgba(0,0,0,.2);
+ 
+}
+
+.menu-toggle span {
+  display: block;
+  height: 4px;
+  margin: 6px;
+  width: 95%;
+  background-color: rgb(7, 4, 4);
+  border-radius: 20%;
+  box-shadow: 0 1px 1px #FFFFFF;
+}
+
+.nav {
+  width:220px;
+  height: 100%;
+  overflow: hidden;
+  transition: all 1s linear;
+  position: absolute;
+  top: 36px;
+  left: -240px;
+  bottom: 0;
+  z-index: 999;
+  background-color: rgba(0, 0, 0, 1);
+ 
+}
+
+.mobile {
+  transform: translate(100%);
+  list-style: none;
+  text-decoration: none;
+  position: fixed;
+  line-height: 2;
+  top: 56px;
+  transition: all 1s linear;
+}
+
+
+
+.nav ul {
+  margin-top: 30px;
+}
+
+.nav ul li {
+  margin-left: 30%;
+}
+
+.nav ul li a {
+  width: 153px;
+  text-decoration: none;
+  margin: 5px;
+  color: white;
+  font-size: 20px;
+  list-style: none;
+  text-decoration: none;
+  display: flex;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 1px hsla(0, 0%, 255%, 0.6);
+}
+nav {
+  width:250px;
+  height: 50px;
+  backdrop-filter: blur(0.85rem);
+  box-shadow: 0 0 10px;
+  background-color: #332d4110;
+  position:fixed;
+  top: 0;
+  left: 0;
+  text-align: left;
+  z-index: 9999;
+  overflow: hidden;
+}

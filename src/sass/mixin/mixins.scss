@@ -1,0 +1,12 @@
+
+
+@mixin fnt($color, $fml, $weight, $size, $height) {
+    color:$color;
+    font-family: $fml;
+    font-style: normal;
+    font-weight: $weight;
+    font-size: $size;
+    line-height: $height;   
+}
+
+// @include fnt($txt-clr, $fml:'Arial',$weight:400,$size:18px,$height:23px);

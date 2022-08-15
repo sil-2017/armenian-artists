@@ -1,0 +1,138 @@
+.main{
+    width: 100%;
+    backdrop-filter: blur(0.65rem);
+    box-shadow: 0 0 10px;
+    background-color: #332d4110;
+    margin-top: 30px;
+    @extend .flx; 
+
+    &-pers{
+        position: relative;
+        @media (min-width:992px) {
+            flex: 0 0 33.33333333%;
+            width: 33.33333333%;
+        }
+        &-cont{
+            display: flex;
+            flex-direction: column;           
+            &-inf{
+                position: relative;
+                width: 100%;
+                height: auto;
+                p{
+                    text-align: center;
+                    margin-left: 12px;                   
+                    span{
+                        display: block;
+                        font-size: 15px;
+                        text-align: left;
+                        line-height: 2;
+                        font-weight: 500;
+                        font-weight: 700;
+                        color:#0F002A;
+                        &:first-of-type{
+                            font-size:25px;
+                            margin-bottom: 10px;
+                            font-weight: 500;
+                            &:hover{
+                                text-decoration: underline;
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                }  
+            }
+
+            &-img{
+                width: 100%;
+                min-height: 50vh;
+                position: relative;               
+                img{
+                    margin-top: 20px;
+                    position: absolute;
+                    object-fit: cover;
+                    top: 5px;
+                    left: 30px;
+                    width: 200px;
+                    height: 200px;
+                    border-radius: 20px;
+                    &:hover{
+                        cursor: pointer;
+                        box-shadow: 0px 0px 30px -4px rgba(73, 71, 71, 0.6);
+                    }
+                }
+                &::before {
+                    content: ' ';
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    width: 240px;
+                    height: 280px;
+                    position: absolute;
+                    top: 5px;
+                    left:20px;
+                    border-right: dashed 10px #5E4A3F;
+                    border-bottom: dashed 3px #5E4A3F;
+                    border-radius: 20%;
+                }
+            }
+
+        }
+    }
+
+    &-works{
+        position: relative;
+      
+        @media (min-width:992px) {
+            flex: 0 0 66.66666667%;
+            width: 66.66666667%;
+        }
+        h2{
+            text-align: center;
+            margin: 20px auto;
+            font-size: 17px;
+            margin-top: 5px;
+            color: black;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-shadow: 0px 0px 0 rgb(-70,-71,0),
+            0px 1px  0 rgb(-309,-310,0),
+            0px 2px 1px rgba(236, 23, 23, 0.2),
+            0px 2px 2px rgba(42, 10, 117, 0.2),
+            0px 0px 2px rgba(237, 237, 17, 0.2);
+
+        }
+
+        &-row{
+            @extend .flx;  
+
+          div{
+            position: relative;
+            margin: 0 3px;
+            &:hover{
+                transition: all 200ms ease-in;
+                transform: scale(1.1);
+                z-index: 22;
+            }
+
+            @media (min-width:992px) {
+                flex: 0 0 24%;
+                width:24%;
+            }
+            a{
+                text-decoration: none;
+            }
+            img{
+                width: 100%;
+                height:250px;
+                background-repeat: no-repeat;
+                background-position: center center;
+                // background-size:cover;
+                object-fit: cover;
+                background-attachment: fixed;
+                box-shadow: 0 0 10px;
+            }
+          }
+        }       
+    }
+
+}

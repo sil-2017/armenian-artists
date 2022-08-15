@@ -1,0 +1,19 @@
+.ftr {
+    height: 90px;
+    padding: 20px;
+    background-color: #000000;
+    overflow: hidden;
+    padding-bottom: 20px;
+    border-top: 16px solid #4b4a4a;
+    @extend .flx; 
+    justify-content: center;
+    align-items: center;
+    font-size: 17px;
+    color: #4b4a4a;
+  
+  }
+  
+  .footer-name a {
+    color: white;
+    text-decoration: none;
+  }
